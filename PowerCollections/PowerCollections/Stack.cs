@@ -11,7 +11,7 @@ namespace Wintellect.PowerCollections
         public int Capacity = 0; // all available count
         public int Count = 0; // current count in array
 
-        public Stack(int count)
+        public Stack(int count = 100)
         {
             this.Array = new Type[count];
             this.Capacity = count;

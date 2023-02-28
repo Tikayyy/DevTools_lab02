@@ -4,6 +4,12 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<Deterministic>false</Deterministic>
+
+		<Authors>Popov Yura</Authors>
+
+		<Version>0.0.2-beta</Version>
+		<PackageId>PopovYuriy.PowerCollections</PackageId>
+		<RepositoryUrl>https://github.com/Tikayyy/DevTools_lab02.git</RepositoryUrl>
 	</PropertyGroup>
 
 </Project>

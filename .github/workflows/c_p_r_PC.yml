@@ -26,7 +26,7 @@ jobs:
       working-directory: PowerCollections
       
     - name: publish
-      run: dotnet nuget push "PowerCollections\PowerCollections\bin\Debug\*.nupkg" -k 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 -s https://nuget.pkg.github.com/Tikayyy/index.json --skip-duplicate
+      run: dotnet nuget push "PowerCollections\PowerCollections\bin\Debug\*.nupkg" -k ${{secrets.GITHUB_TOKEN}} -s https://nuget.pkg.github.com/Tikayyy/index.json --skip-duplicate
       
     - name: Get XML Info
       id: xml

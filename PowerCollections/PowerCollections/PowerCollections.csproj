@@ -7,7 +7,7 @@
 
 		<Authors>Popov Yura</Authors>
 
-		<Version>0.0.2-beta</Version>
+		<Version>0.0.3-beta</Version>
 		<PackageId>PopovYuriy.PowerCollections</PackageId>
 		<RepositoryUrl>https://github.com/Tikayyy/DevTools_lab02.git</RepositoryUrl>
 	</PropertyGroup>

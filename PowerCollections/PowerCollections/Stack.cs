@@ -5,7 +5,8 @@ using System.Linq;
 
 namespace Wintellect.PowerCollections
 {
-
+    public class Stack<Type> : IEnumerable
+    {
         private Type[] Array; // stack
         public int Capacity = 0; // all available count
         public int Count = 0; // current count in array

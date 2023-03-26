@@ -14,8 +14,8 @@ namespace Wintellect.PowerCollections.Tests
             Stack<int> _stack = new Stack<int>(10);
 
             _stack.Push(1);
-            _stack.Push(2);
-            _stack.Push(3);
+            //_stack.Push(2);
+            //_stack.Push(3);
 
             Assert.AreEqual(_stack.Count, 3);
         }

@@ -2,10 +2,9 @@
 <PropertyGroup>
     <Configuration>Debug</Configuration>
     <Overwrite>true</Overwrite>
-    <Project>MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets</Project>
 </PropertyGroup>
 
-<Import Project=$(Project)/>
+<Import Project="MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
 
 <Target Name="Build">
     <Exec Command="dotnet test" ContinueOnError="false"/>
@@ -33,6 +32,6 @@
     <Copy SourceFiles="@(Docs)" DestinationFolder="$(PackDirectory)\site\%(RecursiveDir)" />
     <Copy SourceFiles="@(SourceCode)" DestinationFolder="$(PackDirectory)\src\%(RecursiveDir)" />
 
-    <ZipDirectory SourceDirectory="$(PackDirectory)" Overwrite=$(Overwrite) DestinationFile="$(MSBuildProjectDirectory)\$(PackDirectory).zip" />
+    <ZipDirectory SourceDirectory="$(PackDirectory)" Overwrite="$(Overwrite)" DestinationFile="$(MSBuildProjectDirectory)\$(PackDirectory).zip" />
 </Target>
-</Project>+
+</Project>
